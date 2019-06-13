@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { withTranslation, Link } from '../i18n'
+import { i18n, withTranslation, Router } from '../i18n'
 
 class SecondPage extends React.Component {
 
@@ -16,13 +16,12 @@ class SecondPage extends React.Component {
     return (
       <React.Fragment>
         <h1>{t('h1')}</h1>
-        <Link href='/'>
-          <button
-            type='button'
-          >
-            {t('back-to-home')}
-          </button>
-        </Link>
+        <button
+          type='button'
+          onClick={() => Router.push('/')}
+        >
+          {t('back-to-home')}
+        </button>
       </React.Fragment>
     )
   }
