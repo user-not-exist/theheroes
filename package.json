@@ -19,7 +19,7 @@
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "i18next": "^17.0.3",
     "next": "^8.1.0",
     "next-i18next": "0.41.0",
